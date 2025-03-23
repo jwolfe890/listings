@@ -1,21 +1,20 @@
-.embla__container {
-  display: flex;
-
-  /* max-width: 600px;
-  max-height: 450px; */
+.main-image {
+  max-width: 600px;
+  max-height: 450px;
 }
 
-
-.embla {
-  overflow: hidden;
+.thumbnails img {
+  max-width: 60px;
+  max-height: 45px;
 }
 
-.embla__slide {
-  /* flex: 0 0 100%; */
-  min-width: 0;
+#current {
+  max-width: 600px;
+  max-height: 450px;
+}
 
-  flex-direction: row;
-
-  border: 1px solid black;
-
+#button-container {
+  height: 100px;
+  width: max-content;
+  border: 1px solid;
 }

@@ -168,20 +168,22 @@ const Carousel = () => {
   const handleThumbnailHover = (index) => {
     setCurrentIndex(index);
   };
-
-      const images = [
-        'https://picsum.photos/200/300',
-        'https://picsum.photos/200/310',
-        'https://picsum.photos/200/305',
-        // Add more image paths as needed
-      ]
+  
+    const images = [
+    '/images/1.jpg',
+    '/images/2.jpg',
+    '/images/3.jpg',
+    // Add more image paths as needed
+    ]
 
   return (
     <div className="carousel">
       <div className="main-image">
-        <img src={images[currentIndex]} alt={`Image ${currentIndex + 1}`} />
-        <button onClick={handlePrevious}>Previous</button>
-        <button onClick={handleNext}>Next</button>
+        <img id="current" src={images[currentIndex]} alt={`Image ${currentIndex + 1}`} />
+      </div>
+      <div id="button-container"> 
+      <button onClick={handlePrevious}>Previous</button>
+      <button onClick={handleNext}>Next</button>
       </div>
       <div className="thumbnails">
         {images.map((image, index) => (
